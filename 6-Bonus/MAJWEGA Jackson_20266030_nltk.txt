@@ -1,0 +1,131 @@
+
+      No.1
+>>> 100 * ((40+24)/75)
+85.33333333333334
+     No.3
+>>> ['monty', 'python'] * 20
+['monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python', 'monty', 'python']
+
+>>> 3 * sent1
+['Call', 'me', 'Ishmael', '.', 'Call', 'me', 'Ishmael', '.', 'Call', 'me', 'Ishmael', '.']
+    
+      No.4
+>>> len(text2)
+141576
+>>> len(set(text2))
+6833
+        No.5
+
+
+           No.6
+>>> text2.dispersion_plot(["Elinor", "Marianne", "Edward", "Willoughby"])
+              According to the graph, females play big roles than males.
+              I can observe a couple between Marianne and Willoughby
+           No.7
+>>> text5.collocations()
+wanna chat; PART JOIN; MODE #14-19teens; JOIN PART; PART PART;
+cute.-ass MP3; MP3 player; JOIN JOIN; times .. .; ACTION watches; guys
+wanna; song lasts; last night; ACTION sits; -...)...- S.M.R.; Lime
+Player; Player 12%; dont know; lez gurls; long time
+
+            No.8
+>>> len(set(text4)): will output the length of only unique characters without repeating any character
+The first step involved is to identify all the unique characters using 'set()' function in text4 document
+The second step is to find the length of all the unique characters in text4 document
+         
+            N0.9a
+>>> programming = "python is better than Java"
+>>> programming
+'python is better than Java'
+>>> print(programming)
+python is better than Java
+            No.9b
+If we add our string using below command, strings are joined together without space
+>>> programming + programming
+We can solve that with the below command
+>>> programming + " " + programming
+      
+          no.10a    
+my_sent variable
+>>> my_sent= ['programming', 'is', 'a', 'day', 'by', 'day', 'process']
+>>> my_sent
+['programming', 'is', 'a', 'day', 'by', 'day', 'process']
+
+Join command
+>>> ' '.join(my_sent)
+'programming is a day by day process'
+        No.10b
+Split command
+>>> 'programming is a day by day process'.split()
+['programming', 'is', 'a', 'day', 'by', 'day', 'process']
+         
+          No.11
+variables containing lists of words
+>>> word1 = ['what', 'where', 'when', 'why']
+>>> word2 = ['computing', 'BracU', 'Spring', '2021']
+>>> word3 = ['try', 'your', 'best', 'its', 'right']
+>>> word1 + word2 + word3
+['what', 'where', 'when', 'why', 'computing', 'BracU', 'Spring', '2021', 'try', 'your', 'best', 'its', 'right']
+            
+len(word1 + word2) and len(word1) + len(word2) will yield the same results
+>>> len(word1 + word2)
+8
+>>> len(word1) + len(word2)
+8
+        No.12a
+>>> "Monty Python"[6:12]
+'Python'
+         No.12b
+>>> ["Monty", "Python"][1]
+'Python'
+The first one is more relevant in NLP because it will easily allow a programmer to print each and every character which is not the case with the second statement.
+         No.13
+>>> sent1[2][2]
+'h'
+The command will output the letter in index[2] of the word in the index[2] from the list. This because the command will first look into the entire list and look for the word in index[2] and then it will later check for the letter in index[2] of the states word.
+>>> sent1[2][0]
+'I'
+>>> sent1[0][0]
+'C'
+>>> sent1[0][3]
+'l'
+      No.14
+ indexes for the Other two occurences of the word 'the'
+>>> sent3.index('the', 4)
+5
+>>> sent3.index('the', 6)
+8
+
+     No.15
+All letters starting with letter b in text5
+>>> sorted(w for w in set(text5) if w.startswith('b'))
+
+      No.16
+>>> list(range(10)) / This will list consecutive whole numbers from 0 - 9
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(10, 20)) / This will list all whole numbers from 10 - 19
+[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>> list(range(10, 20, 2)) / This command will list even numbers/ multiples of two from 10 -19
+[10, 12, 14, 16, 18]
+>>> list(range(10, 20,-2)) / This command will return an empty set
+[]
+
+     No.17
+>>> text9.index('sunset')
+629
+>>> text9.concordance("sunset") / This will out the 14 statements containing the word 'sunset' in text 9
+
+      No.18
+>>> len(sorted(set(sent1 + sent2 +sent3 + sent4 + sent5 + sent6 + sent7 + sent8)))
+75
+No.19
+>>> sorted(set(w.lower() for w in text1))
+>>> sorted(w.lower() for w in set(text1)) / This line will give a larger value than line one
+
+     No.20
+They all mean the same 
+ w.isupper() and not w.islower()
+
+      No.21 
+>>> text2[141574:] / Statement to output the last two words of text2
+['THE', 'END']
